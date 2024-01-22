@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#videos{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    overflow:hidden;
+}
+.video-player{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}#user-2
+{
+    display: none;
+}
+
+.smallFrame{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: 220px;
+    width: 370px;
+    border-radius: 5px;
+    border:1px solid #918b8b;
+    -webkit-box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.9);
+    box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.9);
+    z-index: 999;
+    transform: translate3d(0, 0, 0);
+    transition: top 0.1s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Adjust cubic-bezier values */
+}
+
+.tools-container{
+    background-color: rgb(179, 102, 249, .9);
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  #tools{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform:translateX(-50%);
+    display: flex;
+    gap: 1em;
+}
+
+.tools-container img{
+ height: 25px;
+ width: 25px;
+  }
+
+  #Endbtn{
+    background-color: rgb(255,80,80, 1);
+    
+}
+#Endbtn:hover {
+    transform: scale(1.04); /* Adjust the scaling factor */
+    transition: top 0.3s ease-out, transform 0.3s ease-out;
+}
+#Camerabtn:hover {
+    transform: scale(1.04); /* Adjust the scaling factor */
+    transition: top 0.3s ease-out, transform 0.3s ease-out;
+}
+#micbtn:hover {
+    transform: scale(1.04); /* Adjust the scaling factor */
+    transition: top 0.3s ease-out, transform 0.3s ease-out;
+}
+@media screen and (max-width:600px) {
+    .smallFrame{
+        height: 140px;
+        width: 220px;
+        
+    }
+
+    .smallFrame:hover {
+        top: 10px; /* Adjust to your desired final position on hover */
+        transform: scale(1.04); /* Adjust the scaling factor */
+        transition: top 0.3s ease-out, transform 0.3s ease-out;
+    }
+    .tools-container img{
+    width: 15px;
+    height: 15px;
+
+    };
+}
+.smallFrame:hover {
+    top: 10px; /* Adjust to your desired final position on hover */
+    transform: scale(1.04); /* Adjust the scaling factor */
+    transition: top 0.3s ease-out, transform 0.3s ease-out;
+}
