@@ -1,0 +1,5 @@
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore the specific file APP_ID.js
+APP_ID.js

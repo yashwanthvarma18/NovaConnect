@@ -1,4 +1,5 @@
-let APP_ID ="0543bb84a7b24652b20c42287bd4b356";
+import APP_ID from "./APP_ID.js";
+console.log(APP_ID);
 let token = null;
 let uid = String(Math.floor(Math.random() * 10000));
 
@@ -164,7 +165,7 @@ let toggleCamera = async () => {
         document.getElementById('Camerabtn').style.backgroundColor = 'rgb(255, 80, 80)'
     }else{
         videoTrack.enabled = true
-        document.getElementById('Camerabtn').style.backgroundColor = 'rgb(179, 102, 249, .9)'
+        document.getElementById('Camerabtn').style.backgroundColor = 'rgb(0, 204, 0,0.9)'
     }
 }
 
@@ -176,9 +177,10 @@ let toggleMic = async () => {
         document.getElementById('micbtn').style.backgroundColor = 'rgb(255, 80, 80)'
     }else{
         audioTrack.enabled = true
-        document.getElementById('micbtn').style.backgroundColor = 'rgb(179, 102, 249, .9)'
+        document.getElementById('micbtn').style.backgroundColor = 'rgb(0, 204, 0,0.9)'
     }
 }
+
 
 
 
