@@ -1,7 +1,8 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
+
 body {
   overflow: hidden; /* Prevent scrolling */
 }
@@ -34,7 +35,6 @@ body {
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
   backdrop-filter: blur(10px);
-
 }
 
 #form__content__wrapper {
@@ -70,9 +70,7 @@ input[type='submit'] {
 input[type='submit']:hover {
   transform: scale(1.03); /* Scale up on hover */
   background-color: rgba(149, 13, 199, 0.9);
-  
 }
-
 
 canvas {
   position: fixed;
@@ -96,29 +94,28 @@ canvas {
 }
 
 .typing-container {
-  color: white;
+  color: rgb(2, 88, 181);
 }
 
 h1 {
   font-weight: bold;
 }
 
-.container span {
-  color: rgb(0, 0, 239);
-}
 
-.container span::after {
-  content: ' ';
-  animation-name: blinking;
-  animation-duration: 0.71s;
-  animation-iteration-count: infinite;
-}
 
-@keyframes blinking {
-  from {
-    color: transparent;
+
+@media (max-width: 600px) {
+  #form-container {
+    width: 90%;
+    max-width: none;
   }
-  to {
-    color: lightgrey;
+
+  #form__container__header {
+    padding: 20px 40px;
+  }
+
+  input {
+    max-width: none;
   }
 }
+  
