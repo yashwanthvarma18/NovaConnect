@@ -1,6 +1,10 @@
-import APP_ID from "./APP_ID.js";
-console.log(APP_ID);
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+let APP_ID = process.env.APP_ID;
 let token = null;
+
 let uid = String(Math.floor(Math.random() * 10000));
 
 
