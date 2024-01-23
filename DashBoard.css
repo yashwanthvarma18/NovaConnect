@@ -93,6 +93,11 @@ canvas {
   color: white;
 }
 
+#boxing {
+  width: 290px;
+  height: 60px;
+}
+
 .typing-container {
   color: rgb(2, 88, 181);
 }
@@ -101,21 +106,37 @@ h1 {
   font-weight: bold;
 }
 
-
-
-
 @media (max-width: 600px) {
   #form-container {
     width: 90%;
     max-width: none;
+    margin-left: -12px; /* Adjust the margin as needed */
+  /* Add padding to the form container */
   }
 
   #form__container__header {
-    padding: 20px 40px;
+
+    margin-left: 0; /* No need for margin on the header */
+  }
+
+  #boxing {
+    width: 200px;
+    height: 36px;
+    /* Add padding to the #boxing element as needed */
+    padding: 10px;
   }
 
   input {
     max-width: none;
+    margin-left: 0; /* No need for margin on the input */
+    padding: 10px; /* Add padding to the input */
+  }
+
+  #lobby-container {
+    padding-left: 56px; /* Adjust the padding as needed */
+  }
+  h1{
+    font-size: 20px;
+    margin-bottom: 10%; /* Adjust the margin as needed */
   }
 }
-  
